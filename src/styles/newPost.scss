@@ -1,0 +1,61 @@
+.new-post {
+  border: 1px solid #999;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+
+  h2 {
+    color: #000;
+    line-height: 26px;
+    padding: 24px 0;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    &--title {
+      color: #000;
+      margin-bottom: 8px;
+    }
+
+    &--input {
+      margin-bottom: 24px;
+      outline: none;
+      border-radius: 8px;
+      padding: 8px 10px;
+      resize: none;
+      font-size: 14px;
+
+      &::placeholder {
+        color: #ccc;
+      }
+    }
+
+    #title {
+      height: 32px;
+    }
+
+    #content {
+      height: 74px;
+    }
+
+    &--button {
+      display: flex;
+      justify-content: end;
+
+      button {
+        background-color: #7695ec;
+        color: #fff;
+        padding: 7px 30px;
+        border: none;
+        transition: all 0.3;
+
+        &:hover {
+          opacity: 0.9;
+          transform: scale(0.99);
+        }
+      }
+    }
+  }
+}
